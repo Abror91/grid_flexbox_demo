@@ -1,0 +1,415 @@
+/* CSS Variables */
+:root{
+    --yellow:#f1c50e;
+    --dark:#292d33;
+    --light:#ffffff;
+    --light-dark:#111111;
+    --grey:#333333;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+img{
+    width: 100%;
+}
+
+.btn-secondary{
+    text-transform: uppercase;
+    text-decoration: none;
+    border:2px solid var(--dark);
+    width: 150px;
+    padding: 10px 25px;
+    text-align: center;
+    color:var(--grey);
+    font-weight: bold;
+}
+
+.image-round{
+    border-radius: 50% !important;
+}
+
+/* Main */
+.main{
+    background: url(images/bg/pexelsphoto3740657.jpeg);
+    height: 60vh;
+    background-position: 100% 0%;
+    background-size: cover;
+    padding: 0 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main .logo-wrapper{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.main h1{
+    color:var(--light);
+    font-size:2rem;
+}
+
+.main .about-company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-company h4{
+    color:var(--grey);
+    margin-bottom: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.about-company h2{
+    margin-top: 20px;
+    color:var(--dark);
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-company a{
+    text-decoration: none;
+    background:var(--yellow);
+    padding: 10px 25px;
+    display: inline;
+    width: 100px;
+    text-align: center;
+    color:var(--dark);
+    font-weight: 700;
+}
+
+.about-company a:hover{
+    background-color: #d9b10d !important;
+}
+
+/* Main Wrapper Inside*/
+.main-wrapper{
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap:5px;
+}
+
+.main-wrapper .yellow-bg{
+    background:var(--yellow);
+}
+
+.main-wrapper .about-us{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:50px;
+}
+
+.main-wrapper .images-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:5px;
+}
+
+.main-wrapper .main-wrapper-inside{
+    margin-top: 55px;
+}
+
+.main-wrapper .images-wrapper .flex-image{
+    min-height: 389px;
+    background-position: 50% 50%;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.image-1{
+    background-image: url(images/about/pexelsphoto1181735.jpg);
+}
+
+.image-2{
+    background-image: url(images/about/pexelsphoto1391404.png);
+}
+
+.image-3{
+    background-image: url(images/about/pexelsphoto1449052.jpg);
+}
+
+.image-4{
+    background-image: url(images/about/pexelsphoto1457685.jpeg);
+}
+
+.main-wrapper .about-us-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-us-wrapper .about-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-title h5{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:var(--grey)
+}
+
+.about-title p{
+    font-size: 4rem;
+    font-family:monospace;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about-us-wrapper .about-text{
+    display: flex;
+    align-items: center;
+} 
+
+/* My Work */
+.my-work{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:5px;
+}
+
+.my-work h1{
+    font-family:monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.my-work .my-work-images-wrapper{
+    display: grid;
+    gap:5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.my-work a{
+    margin-top: 25px;
+}
+
+/* Team */
+
+.team{
+    margin-top: 50px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:50px;
+}
+
+.team-info-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+}
+
+.team-images-wrapper{
+    height: 250px;
+    display: flex;
+}
+
+.team-info-text h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px auto;
+}
+
+.team-image{
+    margin: 5px;
+    flex:20%;
+    background-size: cover;
+    background-position: 57% 50%;
+}
+
+.team-image-1{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(images/team/pexels-stefan-stefancik-91227.jpg);
+}
+
+.team-image-2{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(images/team/pexels-roberto-hund-5358100.jpg);
+}
+
+.team-image-3{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(images/team//pexels-mentatdgt-1024311.jpg);
+}
+
+.team-image-4{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(images/team/pexels-pixabay-220453.jpg);
+}
+
+.team-image-5{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(images/team/pexels-andrea-piacquadio-789822.jpg);
+}
+
+/* My Latest Work */
+
+.my-latest-work{
+    height: 60vh;
+    margin-top: 50px;
+    background-color: #000000;
+    color:var(--light);
+    padding: 0 20%;
+    display: grid;
+    align-items: center;
+}
+
+.my-latest-work-wrapper{
+    height: 80%;
+    display:grid;
+    align-items: start;
+}
+
+.my-latest-work-wrapper h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin: 0;
+}
+
+.my-latest-work-wrapper a{
+    color:var(--light);
+    font-size: 1.5rem;
+    font-family:monospace;
+}
+
+.my-latest-work-wrapper a:hover{
+    color:grey;
+}
+
+.latest-work-images{
+    display: grid;
+    gap:10px;
+}
+
+.latest-work-image{
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+}
+
+.latest-work-image:hover{
+    opacity: 0.5;
+}
+
+.latest-work-image-1{
+    background-image: url(images/my-works/pexels-eriks-cistovs-10325738.jpg);
+}
+
+.latest-work-image-2{
+    background-image: url(images/my-works/pexels-cottonbro-5319493.jpg);
+}
+
+.latest-work-image-3{
+    background-image: url(images/my-works/pexels-ketut-subiyanto-5050413.jpg);
+}
+
+.latest-work-image-4{
+    background-image: url(images/my-works/pexels-misha-voguel-10298196.jpg);
+}
+
+.latest-work-image-5{
+    background-image: url(images/my-works/pexels-tanathip-rattanatum-2026324.jpg);
+}
+
+.latest-work-image-6{
+    background-image: url(images/my-works/pexels-andrea-piacquadio-3771813.jpg);
+}
+
+/*Company Goal*/
+
+.company-goal{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.meating-image-bg{
+    background-image: url(images/pexelsphoto1181735.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.company-goal-text{
+    position: relative;
+}
+
+.girl-image{
+    height: 183px;
+    width: 183px;
+    position: absolute;
+    left: 100px;
+    top: -50px;
+    background-image: url(images/team/pexels-pixabay-38289.jpg);
+    background-size: cover;
+}
+
+.company-goal-text-wrapper{
+    margin:200px 0 0 100px;
+}
+
+/*Contact Us*/
+
+.contact-us{
+    height: 40vh;
+    display: grid;
+    background-color: #000000;
+    color:var(--light);
+    padding-left: 20%;
+    grid-template-columns: 75% 25%;
+}
+
+.contact-us-details h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.custact-us-yellow-bg{
+    background-color: var(--yellow);
+}
+
+.contact-us-details{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.contact-us-details .contact-us-details-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+
+.contact-us-details .contact-us-contacts-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-item h5{
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer{
+    height: 70px;
+    background-color: var(--grey);
+    color: var(--light);
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
